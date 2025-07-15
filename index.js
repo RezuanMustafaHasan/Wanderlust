@@ -7,21 +7,21 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const ejs = require('ejs');
-const Listing = require('./models/listing');
-const Review = require('./models/review');
+const Listing = require('./models/listing.js');
+const Review = require('./models/review.js');
 const path = require('path');
-const wrapAsync = require('./utils/wrapAsync');
+const wrapAsync = require('./utils/wrapAsync.js');
 const ExpressError = require('./utils/ExpressError.js');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
 const passport = require('passport');
-const User = require('./models/user');
+const User = require('./models/user.js');
 const LocalStrategy = require('passport-local');
 
-const listingRouter = require('./routes/listing');
-const reviewRouter = require('./routes/reviews');
-const userRouter = require('./routes/user'); 
+const listingRouter = require('./routes/listing.js');
+const reviewRouter = require('./routes/reviews.js');
+const userRouter = require('./routes/user.js'); 
 
 // const MONGO_URL = 'mongodb://127.0.0.1:27017/wanderlust';
 // Change this line:
