@@ -1,6 +1,6 @@
-if(process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-} 
+// if(process.env.NODE_ENV !== 'production') {
+// } 
+require('dotenv').config();
 console.log("Environment Variables:");
 console.log("NODE_ENV:", process.env.NODE_ENV);
 console.log("MONGO_URL:", process.env.MONGO_URL);
