@@ -18,40 +18,25 @@ An Airbnb-inspired rental listing app built with Node.js, Express, MongoDB, and 
 
 These screenshots show the running app with the sample listings in `init/data.js`, a local demo owner, and a sample review. Desktop captures use a 1440 × 1000 viewport; longer forms and detail pages include the full page.
 
-<details>
-<summary>Listing details, reviews, and map</summary>
+### Listing details, reviews, and map
 
 ![Listing details with a review and Mapbox map](docs/screenshots/listing-details.png)
 
-</details>
-
-<details>
-<summary>Create a listing</summary>
+### Create a listing
 
 ![Create listing form](docs/screenshots/create-listing.png)
 
-</details>
-
-<details>
-<summary>Edit a listing</summary>
+### Edit a listing
 
 ![Edit listing form with the existing photo](docs/screenshots/edit-listing.png)
 
-</details>
-
-<details>
-<summary>Login</summary>
+### Login
 
 ![Wanderlust login page](docs/screenshots/login.png)
 
-</details>
-
-<details>
-<summary>Signup</summary>
+### Signup
 
 ![Wanderlust signup page](docs/screenshots/signup.png)
-
-</details>
 
 ## Tech stack
 
