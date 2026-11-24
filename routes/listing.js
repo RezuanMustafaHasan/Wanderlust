@@ -10,10 +10,12 @@ const listingController = require("../controllers/listing.js");
 // Index and Create Routes
 router
   .route("/")
-  .get(validateListing, wrapAsync(listingController.index))
+  // Removed validateListing from GET (was causing 400 on empty body)
+  .get(wrapAsync(listingController.index))
   .post(
     isLoggedIn,
     upload.single("listing[image]"),
+    validateListing,              // Added here (validate incoming data)
     wrapAsync(listingController.createListing)
   );
 
@@ -28,6 +30,7 @@ router
     isLoggedIn,
     isOwner,
     upload.single("listing[image]"),
+    validateListing,              // Added here for update validation
     wrapAsync(listingController.updateListing)
   )
   .delete(
